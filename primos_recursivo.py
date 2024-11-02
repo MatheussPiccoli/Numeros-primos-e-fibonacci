@@ -38,4 +38,4 @@ while entrada <= 1:
     else:
        print("A entrada não é um número inteiro")
 
-print(armazena_valores(1, entrada))
+print(f"p({entrada}) = {armazena_valores(1, entrada)}")
