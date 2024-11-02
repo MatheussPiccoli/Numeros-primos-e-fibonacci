@@ -1,14 +1,19 @@
 # Modelo Números primos linear
-def primo(n):
-    for i in range(2, int(n**0.5) + 1):
-        if n % i == 0:
-            return False
+def primos(n):
+    if n == 1:
+        return False
+    elif n != 2 and n % 2 == 0:
+        return False
+    else:
+        for i in range(3, int(n**0.5) + 1, 2):
+            if n % i == 0:
+                return False
     return True
 
 def primos_sequencia(n):
     lista_primos = []
     for i in range(2, n + 1):
-        if primo(i):
+        if primos(i):
             lista_primos.append(i)
     return lista_primos
 
