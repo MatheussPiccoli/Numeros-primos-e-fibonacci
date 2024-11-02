@@ -1,4 +1,7 @@
 # Modelo Números primos linear
+
+#Função que define se o número é primo
+
 def primos(n):
     if n == 1:
         return False
@@ -10,6 +13,8 @@ def primos(n):
                 return False
     return True
 
+# Função responsável por armazenar os valores primos menores que a entrada em uma lista
+
 def primos_sequencia(n):
     lista_primos = []
     for i in range(2, n + 1):
@@ -17,6 +22,7 @@ def primos_sequencia(n):
             lista_primos.append(i)
     return lista_primos
 
+# Validação da entrada
 while True:
     entrada = input("Digite um valor N > 1: ")
     if entrada.isdigit():
