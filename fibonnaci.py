@@ -1,5 +1,6 @@
 #  --- Criar uma função linear que resolva Fibonacci
 
+# Função que resolve a sequencia de fibonacci até o número da entrada
 def fibonacci(n):
     lista = [0, 1, 1]
     fibo = 0
@@ -8,6 +9,7 @@ def fibonacci(n):
         lista.append(fibo)
     return lista[n]
 
+# Validação da entrada
 while True:
     entrada = input("Entrada (Número inteiro >= 0): ")
     if entrada.isdigit():
