@@ -1,3 +1,4 @@
+# Modelo Números primos linear
 def primo(n):
     for i in range(2, int(n**0.5) + 1):
         if n % i == 0:
