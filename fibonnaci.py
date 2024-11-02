@@ -1,6 +1,6 @@
 #  --- Criar uma função linear que resolva Fibonacci
 
-# Função que resolve a sequencia de fibonacci até o número da entrada
+# Função que resolve a sequencia de fibonacci até o número da entrada, retornando o ultimo valor calculado
 def fibonacci(n):
     lista = [0, 1, 1]
     fibo = 0
