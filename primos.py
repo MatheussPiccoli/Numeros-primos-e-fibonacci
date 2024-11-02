@@ -2,6 +2,8 @@
 #      -- Criar uma função em sua linguagem preferida. A função deve receber um numero N > 1 (validar o input),
 # e retornar todos os números primos até o número N. EX. p(2) = [2]; p(3) = [2, 3]; p(10) = [2, 3, 5, 7];
 
+# Função para definir números primos (O(N^2))
+
 def primos(n):
     lista_primos = []
     for i in range(1, n+1):
@@ -12,7 +14,10 @@ def primos(n):
         if primo == True:
             lista_primos.append(i)    
     return lista_primos
-        
+
+
+# Validação da Entrada
+
 while True:
     entrada = input("Digite um valor N > 1: ")
     if entrada.isdigit():
