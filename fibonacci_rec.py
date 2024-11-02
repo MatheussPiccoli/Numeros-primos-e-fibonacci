@@ -1,5 +1,7 @@
 #     --- Criar uma função recursiva que resolva Fibonacci
 
+# Função recursiva para fibonacci
+
 def fibonacci(n):
     if n == 0:
         return 0
@@ -8,6 +10,7 @@ def fibonacci(n):
     else:
         return fibonacci(n-2) + fibonacci(n-1)
 
+# Validação da entrada
 while True:
     entrada = input("Entrada (Número inteiro >= 0): ")
     if entrada.isdigit():
