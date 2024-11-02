@@ -10,13 +10,10 @@ def primos(n):
     elif n != 2 and n % 2 == 0:
         return False
     else:
-        primo = True
-        for i in range(3, int(n ** 0.5 + 1), 2):
+        for i in range(3, int(n**0.5) + 1, 2):
             if n % i == 0:
-                primo = False
-                break
-        return primo
-
+                return False
+    return True
 
 # Função para armazenar os valores primos em uma lista, de maneira recursiva
 
